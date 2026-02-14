@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>At what point does delegation become self-erasure?</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="At What Point Does Delegation Become Self-Erasure?" />
+  <meta property="og:description" content="The AI moment is presenting a total delegation offer. For much of it, you should accept. But there is a category of human activity where delegation doesn't simply save time and tedium. It costs you yourself." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://singlepurposesoftware.com" />
+
+  <!-- Twitter / LinkedIn -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="At What Point Does Delegation Become Self-Erasure?" />
+  <meta name="twitter:description" content="The AI moment is presenting a total delegation offer. For much of it, you should accept. But there is a category of human activity where delegation doesn't simply save time and tedium. It costs you yourself." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===============================
+       Single-Purpose Essay Stylesheet
+       =============================== */
+
+    :root {
+      /* Bounded field */
+      --page-bg: #E8E8E6;
+      --field-bg: #F2F2F0;
+
+      /* Ink + accent */
+      --text: #222629;
+      --muted: #444749;
+      --link: #A3472A;
+      --link-hover: #7D3620;
+
+      /* Layout */
+      --measure: 680px;
+      --pad-x: 3rem;
+      --pad-y: 4rem;
+      --outer-y: 6rem;
+
+      /* Typography */
+      --font: "Source Serif 4", Georgia, "Times New Roman", serif;
+      --base: 19px;
+      --lh: 1.65;
+    }
+
+    /* Reset */
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+
+    body {
+      margin: 0;
+      background: var(--page-bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: var(--base);
+      line-height: var(--lh);
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* The bounded reading field */
+    .reading-field {
+      max-width: var(--measure);
+      margin: var(--outer-y) auto;
+      padding: var(--pad-y) var(--pad-x);
+      background: var(--field-bg);
+    }
+
+    /* Typography rhythm */
+    .prose p {
+      margin: 0 0 1.35em 0;
+    }
+
+    /* Section headers */
+    .prose h2 {
+      margin: 2.75rem 0 0.75rem 0;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: lowercase;
+    }
+
+    .prose h3 {
+      margin: 2.25rem 0 0.75rem 0;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: lowercase;
+    }
+
+    /* The question */
+    .question {
+      font-weight: 500;
+      font-size: 1.15rem;
+      font-style: italic;
+      margin: 2rem 0;
+    }
+
+    /* "It costs you yourself" */
+    .costs-you {
+      font-weight: 500;
+      font-style: italic;
+      display: block;
+      margin-top: 0.5rem;
+    }
+
+    /* Blockquotes */
+    .prose blockquote {
+      margin: 1.75rem 0 1.75rem 0;
+      padding-left: 1rem;
+      border-left: 2px solid #c8c8c6;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--muted);
+    }
+
+    .prose blockquote p {
+      margin: 0;
+    }
+
+    /* Links */
+    .prose a {
+      color: var(--link);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.14em;
+    }
+
+    .prose a:hover {
+      color: var(--link-hover);
+    }
+
+    /* Bold emphasis for key phrases */
+    .prose strong {
+      font-weight: 600;
+    }
+
+    /* Selection color */
+    ::selection {
+      background: rgba(163, 71, 42, 0.18);
+    }
+
+    /* Footer */
+    .author {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #d4d4d2;
+      font-size: 0.85rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    /* Responsive */
+    @media (max-width: 760px) {
+      :root {
+        --base: 18px;
+        --pad-x: 1.25rem;
+        --pad-y: 2.25rem;
+        --outer-y: 2rem;
+      }
+    }
+
+    /* Print */
+    @media print {
+      body { background: #fff; }
+
+      .reading-field {
+        margin: 0;
+        max-width: none;
+        padding: 0;
+        background: transparent;
+      }
+
+      .prose a {
+        color: var(--text);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="reading-field">
+    <article class="prose">
+
+      <p>A colleague of mine, someone who actively uses, benefits from, and advocates for AI tools, sighed deeply before telling me:</p>
+
+      <blockquote>
+        <p>My life and my work is legitimately getting better using AI. But I also feel myself disappearing into an abyss. What it means to be myself or human feels like it's slipping away. I have to be a lot more intentional to feel like I have a grasp on it.</p>
+      </blockquote>
+
+      <p>I've been hearing versions of this everywhere. Not from luddites, but from practitioners. Something is getting better. And something is being lost. Perhaps worse, something is being <em>given away</em>.</p>
+
+      <p>In 2017, I wrote down a line from a <a href="https://www.mindtheproduct.com/video-we-shape-our-products-and-our-products-shape-us-by-josh-brewer/">Josh Brewer talk</a> in my commonplace book:</p>
+
+      <blockquote>
+        <p>As product people we are responsible. We are responsible for the decisions that we make. We are responsible for the ramifications of those decisions. But it does not get talked about very often, if ever. The behaviors that we are creating and promoting and the things that we put in front of people and incentivize them to use and the long-term consequences rarely ever get brought up in meetings, rarely ever get factored in when product roadmaps are being created, and there certainly isn't time baked in anywhere to stop and reflect.</p>
+      </blockquote>
+
+      <p>I've been really <em>feeling this</em> recently. Brewer was talking about smartphones, which makes his concern seem almost quaint now. Because we're no longer just deciding how people spend their screen time. We're deciding which human capacities get exercised and which ones atrophy. And the best I can name this nagging feeling I have is with a question:</p>
+
+      <p class="question">At what point does delegation become self-erasure?</p>
+
+      <p>The AI moment is presenting what amounts to a total delegation offer.</p>
+
+      <p>For much of it, you should accept. Our AI agents will handle scheduling, research, inbox triage, logistics. A whole operational layer of life. I'm looking forward to it. But that same nagging feeling tells me there are categories of human activity where delegation doesn't simply save time and tedium.</p>
+
+      <p><span class="costs-you">It costs you yourself.</span></p>
+
+      <p>The most insidious part is the harm feels like a benefit at first. You hand something off and feel real relief. But a piece of you went with it. The logic is airtight right up until you realize you've optimized yourself out of your own life. By then, the capacity you gave away has atrophied, and you don't even remember you had it.</p>
+
+      <h2>What's worth protecting</h2>
+
+      <p>AI can tell us we <em>could</em> do something. Only we can decide if we <em>should</em>. What should we protect, in our own lives, and in what we build for others?</p>
+
+      <h3>mastery</h3>
+
+      <p>Human beings are learning creatures. I began my career as an educator, not writing code, and this is the thing I am certain of: developing mastery requires effort and intention. It isn't easy. And sometimes that's the point. The struggle is not an obstacle to a good life. It <em>is</em> a good life.</p>
+
+      <p>Mastery isn't only about capability or self-reliance. The effort teaches you about yourself. What you value, what you'll fight for, what actually matters to you. Delegate the effort and you lose both the skill and the self-knowledge that came with it.</p>
+
+      <p>When we build tools that promise to remove struggle entirely, we should ask: are we removing the productive kind? The effort that builds something in the person using the product? If so, it isn't offering convenience. It's offering to make people less capable and less self-aware. And they'll accept, because it feels like relief.</p>
+
+      <h3>human connection</h3>
+
+      <p>When people face important problems, they need help they can trust. And deep, enduring trust requires something only other humans can offer.</p>
+
+      <p>At one end, it's empathy: the kind of knowing that comes from having lived through something with real stakes. An AI has never struggled with something that matters. It has no life to live, no stakes, no emotions to navigate. This isn't a current capability gap, it's a categorical impossibility. Software built by people who have lived the problems their users face carries that understanding into the product. Software built without it can only simulate.</p>
+
+      <p>But human connection in our tools isn't only about empathy for hard things. It's the craft and joy that come through when someone builds out of genuine passion for a domain. You feel the difference between a tool made by someone who deeply loves the thing you're using it for, and a tool that is generically competent. No one has that depth of affinity for everything. An AI can't have it about <em>anything</em>. This isn't nostalgia. It's a resonance between the maker's care and the user's experience. And it's worth something.</p>
+
+      <h3>attention</h3>
+
+      <p>Human attention is finite and not fungible. When someone gives their attention to something, they are giving a piece of their finite life to it. Important activities deserve full presence, not a fraction of it. The tools we build for those activities should signal: <em>this is not like everything else</em>.</p>
+
+      <p>When we fold an activity into the stream of everything, we are telling the user, by design, that the activity isn't special. Sometimes that's the right call. Sometimes it's erasure.</p>
+
+      <h2>What follows</h2>
+
+      <p>This is not an argument against AI. It's an argument for discernment in where we apply it and what we build with it. The solution is not to expunge these new capabilities. It's to be deliberate about what they touch.</p>
+
+      <p>For those of us who build tools: we are deciding right now, every founder, every platform, on every product team, what kind of relationship humans will have with the most important activities in their lives. What behaviors we create, what we incentivize, what we make easy to give away. I fear we aren't actually <em>deciding</em>. We're just stumbling into what is next.</p>
+
+      <p>The tools that resist this share a common shape. They're <strong>single-purpose software</strong>.</p>
+
+      <p>Single-purpose software creates a bounded space where focused attention is possible and decisions are essential. It is built by people who understand and love a specific domain. It supports mastery rather than removing it. It carries human connection into the product itself, both the empathy of shared experience and the craft of genuine passion.</p>
+
+      <p>Single-purpose software is not for everything, but for the five things instead of the fifty. Single-purpose software may or may not use AI. That's not the point. It is for the activities where <em>the effort</em> is the point, where your presence matters, where you are becoming someone or expressing yourself as someone through the act of doing. These tools are humble in a way. Single-purpose software says: <em>I'm not going to take this from you, but I'm going to be the best possible place for you to do it well.</em></p>
+
+      <p>I believe single-purpose software is what tools look like when they're designed to protect what matters in human experience rather than optimize it away. It's what saves you from accidentally giving away something you wish you hadn't.</p>
+
+      <h2>The offer</h2>
+
+      <p>The total delegation offer is real, and it's coming for everything. Be optimistic and accept a lot of it. But be skeptical and decide what you're protecting. The question we should be asking as makers, as people, is whether what we're building leaves room for mastery, connection, and attention.</p>
+
+      <p>AI is already extraordinary at many things. But that makes it more important, not less, to build tools which protect the things it can't replace. We should build on that conviction.</p>
+
+      <footer class="author">
+        Todd Curtis Jesse
+      </footer>
+
+    </article>
+  </main>
+</body>
+</html>
